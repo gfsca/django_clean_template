@@ -7,8 +7,6 @@ def index(request):
     if request.method == 'POST':
         nome = request.POST.get('nome')
         email = request.POST.get('email')
-        telefone = request.POST.get('telefone')
-        assunto = request.POST.get('assunto')
         mensagem = request.POST.get('mensagem')
         send_templated_mail(
         		template_name='email',
